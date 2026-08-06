@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Debug-only network security config.
+  Allows cleartext (HTTP/WS) traffic to localhost and emulator host IPs
+  so the app can connect to Metro bundler for JS bundle loading, HMR
+  (Hot Module Reload), and the DevTools WebSocket inspector.
+
+  This file is NOT included in release builds.
+-->
+<network-security-config>
+    <!-- Allow cleartext for Metro bundler connections -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">localhost</domain>
+        <domain includeSubdomains="false">127.0.0.1</domain>
+        <!-- Android Emulator host loopback -->
+        <domain includeSubdomains="false">10.0.2.2</domain>
+        <!-- Genymotion emulator host loopback -->
+        <domain includeSubdomains="false">10.0.3.2</domain>
+    </domain-config>
+</network-security-config>

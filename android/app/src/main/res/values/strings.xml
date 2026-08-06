@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Cognitive Guardian</string>
+    <string name="accessibility_service_description">Cognitive Guardian on-device screen text monitoring and cognitive safety overlay.</string>
+</resources>
